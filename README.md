@@ -1,3 +1,12 @@
+# EVA A2A Chat Client
+
+This app uses @a2a-js/sdk directly with a hardcoded local Agent Card URL and a simple auth token. Adjust `app/lib/get-a2a-client.ts` if you want to change the URL or token.
+Scripts:
+
+- `npm run dev`
+- `npm run build`
+- `npm run deploy`
+
 # Welcome to React Router!
 
 A modern, production-ready template for building full-stack React applications using React Router.
