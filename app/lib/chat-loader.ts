@@ -1,4 +1,5 @@
 import { getChatDb, type ChatRecord } from "~/db/chat-db";
+import { areSettingsConfigured } from "~/components/settings-dialog";
 
 export async function loadChats(): Promise<ChatRecord[]> {
   const db = getChatDb();
@@ -6,7 +7,6 @@ export async function loadChats(): Promise<ChatRecord[]> {
 }
 
 export async function getSettingsConfiguration(): Promise<boolean> {
-  const { areSettingsConfigured } = await import("~/components/settings-dialog");
   return areSettingsConfigured();
 }
 
